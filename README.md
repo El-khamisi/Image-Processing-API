@@ -56,7 +56,7 @@ npm install
 
 ### Executing program
 
-* The website worked on `process.env.PORT || 5050` by `nodemon` developer monitoring server
+* The website worked on `process.env.PORT || 8081` by `nodemon` developer monitoring server
 * OR on production mode `node dist/index`
 ```
 nodemon index.js
