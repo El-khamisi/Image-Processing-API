@@ -62,6 +62,15 @@ npm install
 nodemon index.js
 ```
 
+## Instructions on how to access endpoint
+`URL/api/images?filename=imagename&width=widthNumber&height=heightNumber`
+
+Example
+filename=fjord 
+width=200
+height=200
+`http://localhost:8081/api/images?filename=fjord&width=200&height=200`
+
 ## Help
 
 Any advise for common problems or issues.

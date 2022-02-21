@@ -8,12 +8,10 @@ const resize = (
   height: number
 ): Promise<string> => {
   return new Promise<string>((resolve, reject) => {
+    const cachedFile =
+      'cached_' + width + 'x' + height + '_' + filename + '.jpg';
     const inputFile = path.join('assets', 'fullSize', filename + '.jpg');
-    const outputFile = path.join(
-      'assets',
-      'thumb',
-      'cached_' + filename + '.jpg'
-    );
+    const outputFile = path.join('assets', 'thumb', cachedFile);
 
     try {
       fs.access(outputFile, fs.constants.F_OK, (err) => {
@@ -23,14 +21,14 @@ const resize = (
             .toFile(outputFile)
             .then(() => {
               console.log('succesfully resizing');
-              resolve(filename);
+              resolve(cachedFile);
             })
             .catch((err) => {
               reject(err);
             });
         } else {
           console.log('The image already exist');
-          resolve(filename);
+          resolve(cachedFile);
         }
       });
     } catch (err) {

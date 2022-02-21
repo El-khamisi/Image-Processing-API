@@ -1,10 +1,10 @@
 import express from 'express';
 import routes from './routes/index';
 import dotenv from 'dotenv';
-dotenv.config()
+dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5050;
+const PORT = process.env.PORT || 8081;
 
 app.use(express.static('assets'));
 app.use(express.json());
