@@ -17,10 +17,6 @@ app.use(express.urlencoded({ extended: true }));
 // Imports all of the routes from ./routes/index.js
 app.use(routes);
 
-app.get('/api', async (req, res) => {
-  res.json({ message: 'pass!' });
-});
-
 //Start Express Server
 app.listen(PORT, () => {
   console.log(`Now Server is listing on PORT-${PORT}`);
