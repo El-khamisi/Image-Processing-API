@@ -1,8 +1,7 @@
 # Image-Processing-API
 
 ## Description
-A website ( based on node.js and express framework) using `sharp` framework to resizing the image and serve the prefiouse one if it has been resized before.
-Written in `typescript` enhanced with `jasmine` unit test framework to ensure the websita has less errors rather than `plain js`
+A website ( based on `node.js` and `express` framework) uses the `sharp` framework to resize the image and serve the previous one if it has been resized before. Written in `typescript` testing written with `jasmine` unit test framework.
 
 ### Installing
 
